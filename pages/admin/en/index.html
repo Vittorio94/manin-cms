@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin/layout.css" />
+    <link rel="stylesheet" href="/elements.css" />
+    <script src="/admin/sidebar.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <button id="sidebar-button-open" class="sidebar-button hidden">
+        <img src="/admin/arrow.-icon.svg" alt="" />
+      </button>
+      <button id="sidebar-button-close" class="sidebar-button">
+        <img
+          src="/admin/arrow.-icon.svg"
+          alt=""
+          style="transform: rotate(180deg)"
+        />
+      </button>
+      <div id="sidebar-content"></div>
+    </div>
+    <div id="content">
+      <section>
+        <h2>Welcome</h2>
+        <p style="color: var(--red-1)">
+          This demo is open to everybody. The website is automatically rolled
+          back to its default state every 10 minutes. The ability to upload new
+          images has been disabled for security reasons.
+        </p>
+        <p>
+          This is the admin dashboard for
+          <a href="/en/">cms.vittoriolora.com</a>. From here you can modify some
+          of the website's contents, such as the phone number, the address, the
+          images and so on.
+        </p>
+
+        <p>
+          In the <a href="/admin/analytics">Analytics</a> section you can see
+          the visitors history country by country.
+        </p>
+      </section>
+    </div>
+    <div id="images-modal" class="hidden">
+      <div id="buttons">
+        <button id="images-modal-close-button">Close</button>
+      </div>
+      <div id="images-modal-container"></div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+    <script src="../index.js" type="module"></script>
+    <script>
+      const cloudflare_url =
+        "https://cms-durable-object-prod.vittorio-dev.workers.dev/track";
+      const referrer = document.referrer.split("/")[2];
+      // TRACK
+      fetch(cloudflare_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify({
+          pathName: window.location.pathname,
+          referrer: referrer ? referrer : "direct",
+        }),
+      }).then(async (res) => {
+        const values = await res.text();
+
+        console.log(values);
+      });
+    </script>
+  </body>
+</html>

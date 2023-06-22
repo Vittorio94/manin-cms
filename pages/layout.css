@@ -1,0 +1,252 @@
+/********/
+/* HERO */
+/********/
+#hero {
+  display: grid;
+  height: 700px;
+  background-image: url("https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/1379b24e-7588-4b59-8e72-e0ae6681ba00/fit=cover");
+  background-position: center;
+}
+
+#hero-text {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
+#hero-title {
+  color: var(--gray-5);
+  font-size: 35pt;
+}
+
+#hero-reservations {
+  align-self: center;
+  justify-self: center;
+  color: var(--gray-5);
+  font-size: 24pt;
+}
+
+/************/
+/* SPECIALS */
+/************/
+#specials {
+  display: grid;
+}
+
+#specials-grid {
+  max-width: 1200px;
+  justify-self: center;
+  padding: 4rem 0.5rem;
+  display: grid;
+}
+
+#specials-title {
+  margin-bottom: 2rem;
+  justify-self: center;
+  border-bottom: 2px solid var(--red-1);
+}
+
+#specials-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.specials-card {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.specials-card .title {
+  justify-self: center;
+}
+
+.specials-card img {
+  width: 100%;
+}
+
+.specials-card .description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: var(--gray-2);
+}
+
+/***********/
+/* HISTORY */
+/***********/
+#history {
+  background-color: var(--gray-5);
+  display: grid;
+}
+
+#history-grid {
+  max-width: 1200px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-right: 0.5rem;
+}
+
+#history-image {
+  width: 100%;
+  display: block;
+}
+
+#history-text {
+  align-self: center;
+}
+
+#history-title {
+  border-bottom: 2px solid var(--red-1);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+#history-body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+/********/
+/* MENU */
+/********/
+#menu {
+  display: grid;
+  padding: 4rem 0.5rem;
+}
+
+#menu-grid {
+  max-width: 1200px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#menu-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-bottom: 2px solid var(--red-1);
+  justify-self: center;
+}
+
+.menu-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-group-title {
+  border-bottom: 1px solid var(--red-1);
+  justify-self: center;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  gap: 0.5rem;
+}
+
+.menu-item-title {
+  font-weight: bold;
+}
+
+/***********/
+/* GALLERY */
+/***********/
+#gallery {
+  display: grid;
+  padding-top: 4rem;
+}
+
+#gallery-grid {
+  display: grid;
+  max-width: 1200px;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-image {
+  width: 100%;
+  display: block;
+}
+
+/********/
+/* CHEF */
+/********/
+#chef {
+  display: grid;
+  margin-top: 2rem;
+  background-color: var(--gray-5);
+}
+
+#chef-grid {
+  max-width: 1200px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-left: 0.5rem;
+}
+
+#chef-image {
+  width: 100%;
+  display: block;
+}
+
+#chef-text {
+  align-self: center;
+}
+
+#chef-title {
+  border-bottom: 2px solid var(--red-1);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+#chef-body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+@media (max-width: 900px) {
+  #specials-cards {
+    grid-template-columns: 1fr;
+  }
+  #specials-grid {
+    max-width: 500px;
+  }
+
+  #history-grid {
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  #history-text {
+    padding: 0rem 1rem;
+  }
+
+  #menu-grid {
+    justify-self: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #menu-title {
+    grid-column-end: 2;
+  }
+
+  #chef-grid {
+    max-width: 500px;
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  #chef-text {
+    padding: 0rem 1rem;
+  }
+}

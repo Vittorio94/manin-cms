@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin/layout.css" />
+    <link rel="stylesheet" href="/elements.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <button id="sidebar-button-open" class="sidebar-button hidden">
+        <img src="/admin/arrow.-icon.svg" alt="" />
+      </button>
+      <button id="sidebar-button-close" class="sidebar-button">
+        <img
+          src="/admin/arrow.-icon.svg"
+          alt=""
+          style="transform: rotate(180deg)"
+        />
+      </button>
+      <div id="sidebar-content"></div>
+    </div>
+    <div id="content">
+      <div style="color: var(--red-1)">
+        Questa demo è accessibile a tutti. Il sito web viene automaticamente
+        ripristinato al suo stato iniziale ogni 10 minuti
+      </div>
+
+      <section id="text-fields">
+        <h2 class="title">Campi</h2>
+        <div id="text-fields-container"></div>
+      </section>
+      <section id="image-fields">
+        <h2 class="title">Immagini</h2>
+        <div id="image-fields-container"></div>
+      </section>
+    </div>
+    <div id="images-modal" class="hidden">
+      <div id="images-modal-title">Seleziona una nuova immagine</div>
+      <div id="images-modal-hint">
+        NOTA: puoi caricare nuove immagini da
+        <a href="/admin/saved-images">qui</a>
+      </div>
+      <div id="images-modal-container"></div>
+      <div id="images-modal-buttons">
+        <button id="images-modal-close-button">Chiudi</button>
+      </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+    <script src="/admin/sidebar.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="elements.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <div class="nav-start" id="nav-start">
+          <a href="/" id="navbar-logo">
+            <img id="logo-img" src="/logo-light.png" alt="" srcset="" />
+          </a>
+        </div>
+        <div class="nav-center" id="nav-center">
+          <a href=""></a>
+        </div>
+        <div class="nav-burger">
+          <div class="nav-burger-bar1"></div>
+          <div class="nav-burger-bar2"></div>
+          <div class="nav-burger-bar3"></div>
+        </div>
+        <div class="nav-end" id="nav-end">
+          <span id="navbar-home">HOME</span>
+          <span id="navbar-specials">SPECIALITÀ</span>
+          <span id="navbar-history">CHI SIAMO</span>
+          <span id="navbar-menu">MENU</span>
+        </div>
+        <div class="nav-flags" id="nav-flags">
+          <a href="./">
+            <img src="/flags/it.svg" alt="" width="20" height="20" />
+          </a>
+          <a href="./en/">
+            <img src="/flags/us.svg" alt="" width="20" height="20" />
+          </a>
+        </div>
+      </nav>
+    </div>
+    <section id="hero">
+      <div id="hero-text">
+        <h1 id="hero-title">Scopri i Sapori Autentici dei Colli Vicentini!</h1>
+        <div id="hero-reservations">
+          Prenotazioni: <span data-cf-key="phone"></span>
+        </div>
+      </div>
+    </section>
+    <section id="specials">
+      <div id="specials-grid">
+        <h2 id="specials-title">Le Nostre Specialità</h2>
+        <div id="specials-cards">
+          <div id="special-1" class="specials-card">
+            <div class="title">Risotto dei Colli</div>
+            <img
+              alt=""
+              srcset=""
+              data-cf-variant="fit=scale-down"
+              data-cf-key="home-specials-image-1"
+            />
+            <div class="description">
+              Un delizioso risotto preparato con riso carnaroli coltivato
+              localmente, funghi porcini freschi, prezzemolo aromatico e una
+              generosa spruzzata di olio extravergine d'oliva. Una combinazione
+              di sapori autunnali che rappresenta l'essenza dei colli vicentini.
+            </div>
+          </div>
+          <div id="special-1" class="specials-card">
+            <div class="title">Baccalà alla Veneta</div>
+            <img
+              alt=""
+              srcset=""
+              data-cf-variant="fit=scale-down"
+              data-cf-key="home-specials-image-2"
+            />
+            <div class="description">
+              Un piatto tradizionale rivisitato con un tocco contemporaneo. Il
+              baccalà viene accuratamente ammorbidito e poi cotto a fuoco lento
+              con olive taggiasche, capperi e pomodorini dolci. Il tutto viene
+              servito su un letto di purè di patate alle erbe, creando un
+              connubio di sapori mediterranei e locali.
+            </div>
+          </div>
+          <div id="special-1" class="specials-card">
+            <div class="title">Tagliatelle del Contadino</div>
+            <img
+              alt=""
+              srcset=""
+              data-cf-variant="fit=scale-down"
+              data-cf-key="home-specials-image-3"
+            />
+            <div class="description">
+              Una pasta fresca fatta in casa, tagliata a mano, condita con un
+              ragù di carne di manzo proveniente direttamente dalle fattorie
+              locali. Il sugo viene preparato lentamente, amalgamando i sapori
+              delle verdure di stagione e delle erbe aromatiche, creando una
+              deliziosa salsa densa e ricca che si sposa perfettamente con le
+              tagliatelle al dente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="history">
+      <div id="history-grid">
+        <div id="history-image-container">
+          <img
+            id="history-image"
+            alt=""
+            srcset=""
+            data-cf-variant="fit=scale-down"
+            data-cf-key="home-history-image"
+          />
+        </div>
+        <div id="history-text">
+          <h2 id="history-title">La nostra storia</h2>
+          <div id="history-body">
+            <p>
+              La nostra trattoria nei colli vicentini è un luogo intriso di
+              storia e tradizione. Fondato nel cuore di questo pittoresco
+              paesaggio collinare, il ristorante affonda le sue radici in una
+              ricca eredità culinaria. Da generazioni, la nostra famiglia si è
+              dedicata alla creazione di piatti autentici e gustosi, realizzati
+              con ingredienti freschi e locali.
+            </p>
+            <p>
+              La nostra passione per la cucina si fonde con l'amore per il
+              territorio, portando alla luce sapori unici e autentici. Ogni
+              piatto che serviamo racconta una storia, una tradizione tramandata
+              nel tempo. Venite a scoprire la magia della nostra trattoria, dove
+              la storia si unisce alla cucina per offrirvi un'esperienza
+              indimenticabile. Benvenuti nella nostra famiglia culinaria!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div id="menu-grid">
+        <h2 id="menu-title">Menu</h2>
+        <div class="menu-group">
+          <div class="menu-group-title">Antipasti</div>
+          <div class="menu-item">
+            <div class="menu-item-title">Bruschetta ai Funghi Porcini</div>
+            <div class="menu-item-price">€8.50</div>
+            <div class="menu-item-body">
+              Pane tostato condito con olio extravergine d'oliva, aglio, funghi
+              porcini freschi e prezzemolo
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              Tagliere di Salumi e Formaggi Locali
+            </div>
+            <div class="menu-item-price">€12.00</div>
+            <div class="menu-item-body">
+              Selezione di salumi stagionati e formaggi locali, accompagnati da
+              pane casereccio e confetture fatte in casa.
+            </div>
+          </div>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Primi</div>
+          <div class="menu-item">
+            <div class="menu-item-title">
+              Risotto al Radicchio Rosso e Salsiccia
+            </div>
+            <div class="menu-item-price">€13.50</div>
+            <div class="menu-item-body">
+              Risotto cremoso preparato con radicchio rosso di Treviso,
+              salsiccia locale, vino rosso e formaggio Grana Padano.
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">Gnocchi al Tartufo</div>
+            <div class="menu-item-price">€14.50</div>
+            <div class="menu-item-body">
+              Gnocchi di patate fatti in casa conditi con una delicata salsa al
+              tartufo, parmigiano grattugiato e prezzemolo fresco.
+            </div>
+          </div>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Secondi</div>
+          <div class="menu-item">
+            <div class="menu-item-title">Filetto di Manzo ai Funghi</div>
+            <div class="menu-item-price">€22.00</div>
+            <div class="menu-item-body">
+              Filetto di manzo alla griglia servito con una salsa ai funghi
+              porcini, accompagnato da patate arrosto e verdure di stagione.
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">Trota con Salsa alle Mandorle</div>
+            <div class="menu-item-price">€18.00</div>
+            <div class="menu-item-body">
+              Trota fresca del territorio cotta al cartoccio e servita con una
+              salsa alle mandorle croccanti, accompagnata da contorno di spinaci
+              saltati in padella.
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-title">Arrosto di Maiale alle Erbe</div>
+            <div class="menu-item-price">€19.00</div>
+            <div class="menu-item-body">
+              Arrosto di maiale marinato con erbe aromatiche locali, servito con
+              salsa al vino rosso, patate arrosto e verdure di stagione.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chef">
+      <div id="chef-grid">
+        <div id="chef-text">
+          <h2 id="chef-title">Il Nostro Chef</h2>
+          <div id="chef-body">
+            <p>
+              Un talento culinario eccezionale che porta l'anima dei colli
+              vicentini sulle nostre tavole. Con una passione travolgente per
+              l'arte della cucina, il nostro chef crea piatti straordinari che
+              esplorano l'equilibrio perfetto tra tradizione e innovazione.
+              Guidato dalla ricerca di ingredienti locali di alta qualità, si
+              impegna a offrire un'esperienza gastronomica indimenticabile. La
+              sua creatività si esprime attraverso combinazioni audaci di sapori
+              e una presentazione impeccabile. Unisce l'esperienza culinaria
+              all'arte, creando emozioni che si riflettono in ogni boccone.
+            </p>
+          </div>
+        </div>
+        <div id="chef-image-container">
+          <img
+            id="chef-image"
+            alt=""
+            srcset=""
+            data-cf-variant="fit=scale-down"
+            data-cf-key="home-chef-image"
+          />
+        </div>
+      </div>
+    </section>
+    <div id="bottom-banner-container" data-lang="IT">
+      <div id="bottom-banner-it" class="bottom-banner">
+        <h3 class="title">
+          <a href="/admin/?lang=IT">DASHBOARD AMMINISTRATIVA&#8599;</a>
+        </h3>
+        <div class="description">
+          Questo sito è inteso come un esempio di una landing page per un
+          ristorante creata con manin-cms. Chiunque può effettuare modifiche. Il
+          sito viene ripristinato al suo stato originale ogni 5 minuti.
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>ARI s.r.l</div>
+      <div data-cf-key="address"></div>
+      <div>P. IVA: <span data-cf-key="iva"></span></div>
+      <div>© 2023 Vittorio Lora</div>
+    </footer>
+
+    <script src="/index.js"></script>
+    <script src="/ui.js"></script>
+    <script>
+      const cloudflare_url =
+        "https://cms-durable-object-prod.vittorio-dev.workers.dev/track";
+      const referrer = document.referrer.split("/")[2];
+      // TRACK
+      fetch(cloudflare_url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify({
+          pathName: window.location.pathname,
+          referrer: referrer ? referrer : "direct",
+        }),
+      }).then(async (res) => {
+        const values = await res.text();
+
+        console.log(values);
+      });
+    </script>
+  </body>
+</html>

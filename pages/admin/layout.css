@@ -1,0 +1,264 @@
+:root {
+  /*gray*/
+  --gray-1: #333333;
+  --gray-2: #666666;
+  --gray-3: #999999;
+  --gray-4: #cccccc;
+  --gray-5: #f2f2f2;
+
+  --red-1: #d43031;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --accent: #ff4d01ff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  touch-action: manipulation;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: var(--gray-1);
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+/* HERO */
+
+#hero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-4);
+}
+
+#hero img {
+  height: 2rem;
+}
+
+#hero a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+/* SIDEBAR */
+#sidebar {
+  display: grid;
+  align-content: start;
+  background-color: var(--gray-1);
+  color: var(--gray-5);
+  min-height: 100vh;
+}
+#sidebar-content {
+  display: grid;
+  align-content: start;
+  padding: 0rem 1rem;
+}
+
+#sidebar-content a {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 0.5rem;
+}
+#sidebar-content .title {
+  color: var(--gray-3);
+  margin-top: 0.5rem;
+}
+#sidebar-content .divider {
+  border-bottom: 1px solid var(--gray-3);
+  margin-top: 0.5rem;
+}
+#sidebar-content .flags {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+#sidebar-logo {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.sidebar-button {
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  margin-top: 1rem;
+}
+.sidebar-button img {
+  width: 1.5rem;
+}
+#sidebar-content.hidden {
+  display: none;
+}
+.sidebar-button.hidden {
+  display: none;
+}
+
+/* CONTENT */
+#content {
+  display: grid;
+  padding: 1rem;
+  align-content: start;
+  margin-top: 2rem;
+}
+
+#content section {
+  border-bottom: 1px solid var(--gray-3);
+  padding: 1rem 0rem;
+}
+#content section h2 {
+  margin-bottom: 1rem;
+}
+
+#content section:last-child {
+  border: none;
+}
+
+/* TEXT FIELDS */
+#text-fields-container {
+  display: grid;
+  grid-template-columns: auto 200px auto;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* IMAGE FIELDS */
+#image-fields-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* SAVED IMAGES PAGE*/
+
+#saved-images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+#saved-images-container .image-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: end;
+  justify-items: center;
+  position: relative;
+  width: 200px;
+}
+
+#saved-images-container .image-card .delete-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: none;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+#saved-images-container .image-card .title {
+  display: grid;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+#saved-images-container .image-card .image {
+  justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* IMAGES MODAL */
+#images-modal {
+  display: grid;
+  gap: 0.5rem;
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border: 1px solid var(--gray-75);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 100%;
+  max-width: 90vw;
+  padding: 1rem;
+}
+
+#images-modal.hidden {
+  display: none;
+}
+
+#images-modal-buttons {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: end;
+}
+
+#images-modal-title {
+  font-weight: bold;
+}
+#images-modal-hint {
+  color: var(--gray-2);
+}
+
+#images-modal-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+#images-modal-container .image-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: end;
+  gap: 0.5rem;
+  justify-items: center;
+  border: 1px solid transparent;
+  padding: 10px 0;
+}
+#images-modal-container .image-card:hover {
+  cursor: pointer;
+  border: 1px solid var(--gray-4);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#overlay.hidden {
+  display: none;
+}
+
+#credit {
+  padding: 1rem;
+  color: var(--gray-3);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+}

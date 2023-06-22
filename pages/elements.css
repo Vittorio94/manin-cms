@@ -1,0 +1,194 @@
+/* PARAGRAPHS*/
+p {
+  margin: 0.5rem 0rem;
+}
+
+/* HEADERS */
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 900;
+}
+
+h5 {
+  font-weight: 900;
+}
+
+h6 {
+  font-weight: 900;
+}
+
+/* TABLES */
+table {
+  border-collapse: collapse;
+}
+
+/* LISTS */
+ul {
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+li {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* LINKS */
+a {
+  color: inherit;
+}
+
+/* BUTTONS */
+button {
+  position: relative;
+  min-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-style: solid;
+  background-color: var(--gray-5);
+  border: 1px solid var(--gray-3);
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: var(--gray-1);
+  min-height: 2rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+button.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+button.loading:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.75rem;
+  margin-left: -0.75rem;
+  border: 5px solid transparent;
+  border-top: 5px solid var(--gray-2);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  animation: button-spin 1s linear infinite;
+}
+
+@keyframes button-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button.asterisk::after {
+  content: "*";
+  position: absolute;
+  font-size: 14pt;
+  color: var(--accent);
+}
+
+/* FORMS */
+input {
+  accent-color: var(--gray-3);
+}
+
+input[type="email"],
+[type="text"],
+[type="number"],
+[type="date"],
+[type="password"] {
+  box-shadow: none;
+  border: 1px solid var(--gray-3);
+  min-height: 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding-left: 0.5rem;
+  color: var(--gray-1);
+}
+
+input[type="email"]:focus,
+[type="text"]:focus,
+[type="number"]:focus,
+[type="password"]:focus {
+  border: 1px solid var(--accent);
+  box-shadow: none;
+}
+
+input[type="email"]:disabled,
+[type="text"]:disabled,
+[type="number"]:disabled,
+[type="date"]:disabled,
+[type="password"]:disabled {
+  color: var(--gray-3);
+  border: 1px solid var(--gray-4);
+  background-color: white;
+}
+
+input[type="file"] {
+  min-height: 2rem;
+}
+
+form input::placeholder {
+  font-weight: 200;
+}
+
+form button {
+  height: 100%;
+}
+
+select {
+  box-shadow: none;
+  background-color: white;
+  border: 1px solid var(--gray-3);
+  padding: 0.3rem;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+select:disabled {
+  color: var(--gray-3);
+  border: 1px solid var(--gray-4);
+  background-color: white;
+}
+
+/*****************/
+/* BOTTOM BANNER */
+/*****************/
+#bottom-banner-container {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  padding: 0.5rem;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 100vw;
+}
+
+#bottom-banner-container .title {
+  text-align: center;
+}
+
+#bottom-banner-container .description {
+  text-align: center;
+}

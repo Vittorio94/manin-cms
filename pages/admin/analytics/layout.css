@@ -1,0 +1,21 @@
+#charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#referrers-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.referrer-label {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  #charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

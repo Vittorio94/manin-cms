@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin/layout.css" />
+    <link rel="stylesheet" href="/elements.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sidebar">
+      <button id="sidebar-button-open" class="sidebar-button hidden">
+        <img src="/admin/arrow.-icon.svg" alt="" />
+      </button>
+      <button id="sidebar-button-close" class="sidebar-button">
+        <img
+          src="/admin/arrow.-icon.svg"
+          alt=""
+          style="transform: rotate(180deg)"
+        />
+      </button>
+      <div id="sidebar-content"></div>
+    </div>
+    <div id="content">
+      <section id="upload">
+        <div style="color: var(--red-1)">
+          This demo is accessible by everybody. The ability to upload and delete
+          images has been disabled for security reasons.
+        </div>
+      </section>
+      <section id="saved-images">
+        <h2 class="title">Saved images</h2>
+        <div id="saved-images-container"></div>
+      </section>
+    </div>
+    <script src="/admin/sidebar.js"></script>
+    <script src="../index.js" type="module"></script>
+  </body>
+</html>

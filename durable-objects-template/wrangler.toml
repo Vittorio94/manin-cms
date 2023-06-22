@@ -1,0 +1,16 @@
+name = "cms-durable-object-prod"
+main = "./src/index.mjs"
+compatibility_date = "2022-09-08"
+compatibility_flags = ["durable_object_alarms"]
+
+[durable_objects]
+bindings = [{name = "CMS_DATA", class_name = "Data"}]
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["Data"]
+
+[vars]
+CFP_PASSWORD = "password" # password to match in url params
+DO_NAME = "data" # string used to create the id of the DO using .idFromName()
+PATHNAMES = ["/", "/en/", "/admin/"]
