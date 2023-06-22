@@ -1,1 +1,2 @@
-functions/
+functions/admin/delete_image.js
+functions/admin/upload_image.js
