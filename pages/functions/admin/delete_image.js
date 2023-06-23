@@ -1,4 +1,4 @@
-export async function onRequestPost(context) {
+export async function onRequestPost(context, env) {
   const { request, env } = context;
 
   // get request body
@@ -13,7 +13,7 @@ export async function onRequestPost(context) {
         `https://api.cloudflare.com/client/v4/accounts/63e232b8caf4359470ef1d706472cdce/images/v1/${imageId}`,
         {
           headers: {
-            Authorization: "Bearer h0lFsLrGjHa-iqxs7SD8R0n103J5OeczyXTzUDEr",
+            Authorization: `Bearer ${env.IMAGES_API_TOKEN}`,
           },
           method: "DELETE",
         }
