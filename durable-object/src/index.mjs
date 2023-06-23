@@ -12,22 +12,120 @@ const defaultState = {
   phone: "1234567891",
   address: "Via Verdi 1, Vicenza (VI)",
   iva: "987654321",
+  "hero-title-it": "Scopri i sapori autentici dei colli vicentini",
+  "hero-title-en": "Discover the authentic flavors of Vicenza's hills",
   "home-history-image": {
-    id: "565ad6df-cd49-4769-2153-aafadcd09b00",
+    id: "db0468e6-1543-4137-1e5b-f1045ad74700",
+    variant: "fit=scale-down",
+  },
+  "home-specials-image-1": {
+    id: "2771ebf6-8166-4283-9a85-8c7a6686ff00",
     variant: "fit=scale-down",
   },
   "home-specials-image-2": {
-    id: "39268c73-e4bd-4682-35b2-84e9e110e600",
+    id: "8cbcb944-6867-4769-1ec6-c8b5d9a30400",
     variant: "fit=scale-down",
   },
   "home-specials-image-3": {
-    id: "841c0ae3-63e4-43a7-11c8-932378c76900",
+    id: "9567346c-82ee-42c3-cdb3-e118bf760c00",
     variant: "fit=scale-down",
   },
   "home-chef-image": {
-    id: "7a7c98b2-096a-45ab-5e4a-fb6fca426c00",
+    id: "0b01d4d3-53c8-4701-2140-e0d44648be00",
     variant: "fit=scale-down",
   },
+  images: [
+    {
+      id: "242bd67d-5aa0-4be5-131c-56b157ad5e00",
+      filename: "1.jpg",
+      uploaded: "2023-06-23T07:10:09.856Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/242bd67d-5aa0-4be5-131c-56b157ad5e00/public",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/242bd67d-5aa0-4be5-131c-56b157ad5e00/thumb",
+      ],
+    },
+    {
+      id: "eb789ae9-a819-4620-22f4-f0f76f636800",
+      filename: "2.jpg",
+      uploaded: "2023-06-23T07:10:23.555Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/eb789ae9-a819-4620-22f4-f0f76f636800/thumb",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/eb789ae9-a819-4620-22f4-f0f76f636800/public",
+      ],
+    },
+    {
+      id: "ebf1d8ab-5e9c-46ee-fd4a-80550ad47800",
+      filename: "3.jpg",
+      uploaded: "2023-06-23T07:10:36.106Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/ebf1d8ab-5e9c-46ee-fd4a-80550ad47800/public",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/ebf1d8ab-5e9c-46ee-fd4a-80550ad47800/thumb",
+      ],
+    },
+    {
+      id: "8cbcb944-6867-4769-1ec6-c8b5d9a30400",
+      filename: "baccala.jpg",
+      uploaded: "2023-06-23T07:10:54.221Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/8cbcb944-6867-4769-1ec6-c8b5d9a30400/thumb",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/8cbcb944-6867-4769-1ec6-c8b5d9a30400/public",
+      ],
+    },
+    {
+      id: "0b01d4d3-53c8-4701-2140-e0d44648be00",
+      filename: "chef.jpg",
+      uploaded: "2023-06-23T07:11:10.165Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/0b01d4d3-53c8-4701-2140-e0d44648be00/public",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/0b01d4d3-53c8-4701-2140-e0d44648be00/thumb",
+      ],
+    },
+    {
+      id: "c46dec86-b788-4c5a-e2c9-5f413d9e9500",
+      filename: "gallery-3.jpg",
+      uploaded: "2023-06-23T07:12:10.865Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/c46dec86-b788-4c5a-e2c9-5f413d9e9500/public",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/c46dec86-b788-4c5a-e2c9-5f413d9e9500/thumb",
+      ],
+    },
+    {
+      id: "db0468e6-1543-4137-1e5b-f1045ad74700",
+      filename: "history.jpg",
+      uploaded: "2023-06-23T07:12:27.028Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/db0468e6-1543-4137-1e5b-f1045ad74700/thumb",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/db0468e6-1543-4137-1e5b-f1045ad74700/public",
+      ],
+    },
+    {
+      id: "2771ebf6-8166-4283-9a85-8c7a6686ff00",
+      filename: "risotto.jpg",
+      uploaded: "2023-06-23T07:12:41.348Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/2771ebf6-8166-4283-9a85-8c7a6686ff00/thumb",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/2771ebf6-8166-4283-9a85-8c7a6686ff00/public",
+      ],
+    },
+    {
+      id: "9567346c-82ee-42c3-cdb3-e118bf760c00",
+      filename: "tagliatelle.jpg",
+      uploaded: "2023-06-23T07:12:59.629Z",
+      requireSignedURLs: false,
+      variants: [
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/9567346c-82ee-42c3-cdb3-e118bf760c00/thumb",
+        "https://imagedelivery.net/gaTVTc0o1orPv9ZC5EE07g/9567346c-82ee-42c3-cdb3-e118bf760c00/public",
+      ],
+    },
+  ],
 };
 
 // Worker entry point
@@ -259,6 +357,10 @@ export class Data {
       // clearing analytics key
       try {
         const res = await this.state.storage.put("analytics", {});
+
+        // DELETE THIS
+        await this.state.storage.deleteAll();
+
         return new Response(`analytics cleared successfully`, {
           status: 200,
           headers: corsHeaders,

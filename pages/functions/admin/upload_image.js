@@ -43,7 +43,7 @@ export async function onRequestPost(context) {
   json = await res.json();
   let images;
   if (json["images"]) {
-    images = JSON.parse(json.images);
+    images = json.images;
   } else {
     images = [];
   }
@@ -59,7 +59,7 @@ export async function onRequestPost(context) {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify([{ key: "images", value: JSON.stringify(images) }]),
+      body: JSON.stringify([{ key: "images", value: images }]),
     }
   );
 

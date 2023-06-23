@@ -304,7 +304,8 @@ export function createModalImageCardHtml(image) {
 export async function populateImagesModal() {
   // get image keys from DO
   const values = await getKeysValues(["images"]);
-  const images = JSON.parse(values["images"]).filter((image) => image);
+
+  const images = values["images"].filter((image) => image);
 
   // populate modal
   const modalContainer = document.getElementById("images-modal-container");

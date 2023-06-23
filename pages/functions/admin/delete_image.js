@@ -23,7 +23,7 @@ export async function onRequestPost(context) {
 
   // get images list
   res = await fetch(
-    "https://restaurant-durable-object.vittorio-dev.workers.dev/get",
+    "https://cms-durable-object-prod.vittorio-dev.workers.dev//get",
     {
       method: "POST",
       headers: {
@@ -34,22 +34,24 @@ export async function onRequestPost(context) {
     }
   );
   json = await res.json();
-  const images = JSON.parse(json.images).filter(
+  const images = json.images.filter(
     (image) => image && !imageIds.includes(image.id)
   );
+  console.log(images);
 
   // update image list
   res = await fetch(
-    "https://restaurant-durable-object.vittorio-dev.workers.dev/put?password=password",
+    "https://cms-durable-object-prod.vittorio-dev.workers.dev//put?password=password",
     {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify([{ key: "images", value: JSON.stringify(images) }]),
+      body: JSON.stringify([{ key: "images", value: images }]),
     }
   );
+  console.log(await res.text());
 
   return new Response("success");
 }

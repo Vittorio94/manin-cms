@@ -69,8 +69,10 @@ async function loadAllImages() {
   if (!values["images"]) {
     images = [];
   } else {
-    images = JSON.parse(values["images"]).filter((image) => image);
+    images = values["images"].filter((image) => image);
   }
+
+  console.log(images);
 
   // create image cards
   const savedContainer = document.getElementById("saved-images-container");
