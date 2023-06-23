@@ -16,6 +16,7 @@ body {
   display: grid;
   align-self: center;
   justify-self: center;
+  padding: 0rem 1rem;
 }
 
 #hero-title {
