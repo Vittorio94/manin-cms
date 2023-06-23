@@ -6,6 +6,10 @@ import {
 
 // global state object
 const state = {
+  textFields: {
+    "hero-title-it": { label: "Titolo principale (IT):", type: "text" },
+    "hero-title-en": { label: "Titolo principale (EN):", type: "text" },
+  },
   imageFields: {
     "home-history-image": { label: "History", variant: "fit=scale-down" },
     "home-specials-image-1": {

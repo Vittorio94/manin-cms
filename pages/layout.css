@@ -1,6 +1,10 @@
 /********/
 /* HERO */
 /********/
+body {
+  font-family: "Amatic SC", sans-serif;
+}
+
 #hero {
   display: grid;
   height: 700px;
