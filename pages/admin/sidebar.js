@@ -10,7 +10,13 @@ const enSidebarStr = `
   <div class="title">PAGES</div>
   <a href="/admin/pages/home/en/">Home</a>
   <div class="divider"></div>
-  <a href="/en/" target="_blanck">Show website&#8599;</a>
+  <a href="/en/" target="_blanck">Show website<img
+              src="/new-window.svg"
+              alt=""
+              width="10"
+              height="10"
+              class="new-window-icon"
+          /></a>
   <div class="divider"></div>
   <div class="flags">
     <a href="../">
@@ -37,7 +43,13 @@ const itSidebarStr = `
   <div class="title">PAGINE</div>
   <a href="/admin/pages/home/">Home</a>
   <div class="divider"></div>
-  <a href="/" target="_blank">Mostra sito&#8599;</a>
+  <a href="/" target="_blank">Mostra sito<img
+              src="/new-window.svg"
+              alt=""
+              width="10"
+              height="10"
+              class="new-window-icon"
+          /></a>
   <div class="divider"></div>
   <div class="flags">
     <a href="./">

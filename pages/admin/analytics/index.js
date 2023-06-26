@@ -132,16 +132,51 @@ function parseData() {
       }
 
       for (const country of countries) {
-        const uniqueVisits = Object.keys(
-          state.analytics[dateStr].countries[country]
-        ).length;
-        uniqueCountryValues[country].push(uniqueVisits);
-        const ips = Object.keys(state.analytics[dateStr].countries[country]);
-        let dayTotal = 0;
-        for (const ip of ips) {
-          dayTotal += state.analytics[dateStr].countries[country][ip];
+        if (state.analytics[dateStr].countries[country]) {
+          const uniqueVisits = Object.keys(
+            state.analytics[dateStr].countries[country]
+          ).length;
+          uniqueCountryValues[country].push(uniqueVisits);
+          const ips = Object.keys(state.analytics[dateStr].countries[country]);
+          let dayTotal = 0;
+          for (const ip of ips) {
+            dayTotal += state.analytics[dateStr].countries[country][ip];
+          }
+          countryValues[country].push(dayTotal);
+        } else {
+          countryValues[country].push(0);
+          uniqueCountryValues[country].push(0);
         }
-        countryValues[country].push(dayTotal);
+        if (state.analytics[dateStr].countries[country]) {
+          const uniqueVisits = Object.keys(
+            state.analytics[dateStr].countries[country]
+          ).length;
+          uniqueCountryValues[country].push(uniqueVisits);
+          const ips = Object.keys(state.analytics[dateStr].countries[country]);
+          let dayTotal = 0;
+          for (const ip of ips) {
+            dayTotal += state.analytics[dateStr].countries[country][ip];
+          }
+          countryValues[country].push(dayTotal);
+        } else {
+          countryValues[country].push(0);
+          uniqueCountryValues[country].push(0);
+        }
+        if (state.analytics[dateStr].countries[country]) {
+          const uniqueVisits = Object.keys(
+            state.analytics[dateStr].countries[country]
+          ).length;
+          uniqueCountryValues[country].push(uniqueVisits);
+          const ips = Object.keys(state.analytics[dateStr].countries[country]);
+          let dayTotal = 0;
+          for (const ip of ips) {
+            dayTotal += state.analytics[dateStr].countries[country][ip];
+          }
+          countryValues[country].push(dayTotal);
+        } else {
+          countryValues[country].push(0);
+          uniqueCountryValues[country].push(0);
+        }
       }
     } else {
       for (const pathName of pathNames) {

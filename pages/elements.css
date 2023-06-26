@@ -169,6 +169,15 @@ select:disabled {
   background-color: white;
 }
 
+/*******************/
+/* NEW WINDOW ICON */
+/*******************/
+.new-window-icon {
+  width: 1rem;
+  height: auto;
+  margin-left: 0.2rem;
+}
+
 /*****************/
 /* BOTTOM BANNER */
 /*****************/
